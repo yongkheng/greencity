@@ -26,7 +26,7 @@ apt install -y fail2ban
 
 # prepare app directory
 mkdir /apps
-chmod 700 /apps
+chmod 777 /apps
 mkdir -p /apps/logs/greencity_api
 
 # adding a dummy user
