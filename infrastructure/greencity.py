@@ -2,7 +2,7 @@ from typing import Optional
 import pandas as pd
 
 async def _get_external_report(city: str, factor: Optional[str] = "overall"):
-    df = pd.read_csv("greencities.csv")
+    df = pd.read_csv("infrastructure/greencities.csv")
     df.index = df.city.apply(lambda x: x.lower().replace(' ', '_'))
     resp = {}
     if city in df.index:
